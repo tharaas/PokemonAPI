@@ -5,12 +5,13 @@ import webbrowser
 class PokemonPage:
     CARDS = []
     LEN_LIST_CARDS = 0
+    URL = 'https://api.pokemontcg.io/v2/cards'
 
     def __init__(self, api_object):
         self.my_api = api_object
 
     def pokemon_cards(self):
-        response = self.my_api.api_get_request(f'https://api.pokemontcg.io/v2/cards')
+        response = self.my_api.api_get_request(self.URL)
         data = response.json()
         cards = data.get("data")
 
