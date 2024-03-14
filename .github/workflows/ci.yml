@@ -23,4 +23,4 @@ jobs:
         chrome-version: latest
         
     - name: Run Selenium Test
-      run: python Pokemon/Test/pokemon_cards_test.py
+      run: python /Pokemon/Test/pokemon_cards_test.py
