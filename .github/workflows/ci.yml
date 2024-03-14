@@ -21,6 +21,9 @@ jobs:
       uses: browser-actions/setup-chrome@v1
       with:
         chrome-version: latest
+
+    - name: Run Test
+      run: echo "$(pwd)"
         
     - name: Run Selenium Test
-      run: python /Pokemon/Test/pokemon_cards_test.py
+      run: python Pokemon/Test/pokemon_cards_test.py
