@@ -26,4 +26,4 @@ jobs:
       run: echo "$(pwd)"
         
     - name: Run Selenium Test
-      run: python Pokemon/Test/pokemon_cards_test.py
+      run: python PokemonAPIPokemon/Test/pokemon_cards_test.py
